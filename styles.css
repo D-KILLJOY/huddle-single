@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap");
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+:root {
+	--Violet: hsl(257, 40%, 49%);
+	--Soft-Magenta: hsl(300, 69%, 71%);
+
+	--open-sans: "Open Sans", sans-serif;
+	--poppins: "Poppins", sans-serif;
+}
+
+.desktop-hero {
+	display: none;
+}
+
+img {
+	display: block;
+}
+
+body {
+	background-color: var(--Violet);
+	position: relative;
+}
+
+.header {
+	padding: 2rem;
+}
+
+.logo {
+	width: 9rem;
+}
+
+.hero-bg {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: -10;
+}
+
+.hero-img {
+	width: 20.5rem;
+	margin: 2.5rem auto;
+}
+
+.hero-text {
+	color: #fff;
+	text-align: center;
+}
+
+.hero-text h1 {
+	font-family: var(--poppins);
+	font-size: 1.6rem;
+	padding: 0 3rem;
+	margin-bottom: 2rem;
+}
+
+.hero-text p {
+	font-family: var(--open-sans);
+	padding: 0 2.5rem;
+	font-size: 1.1rem;
+	line-height: 1.6;
+	margin-bottom: 2rem;
+}
+
+.hero-text button {
+	padding: 0.9rem 5rem;
+	margin-bottom: 4rem;
+	border: none;
+	border-radius: 3rem;
+	color: var(--Violet);
+	font-family: var(--poppins);
+}
+
+.attribution {
+	font-size: 11px;
+	text-align: center;
+}
+.attribution a {
+	color: hsl(228, 45%, 44%);
+}
