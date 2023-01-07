@@ -77,10 +77,37 @@ body {
 	font-family: var(--poppins);
 }
 
-.attribution {
-	font-size: 11px;
-	text-align: center;
+.socials {
+	margin: 0 auto;
+	width: 8rem;
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 3rem;
 }
+
+.socials button {
+	background-color: transparent;
+	border: 2px solid #fff;
+	border-radius: 50%;
+	width: 2rem;
+	height: 2rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.icons {
+	color: #fff;
+	font-size: 1.1rem;
+}
+
+.attribution {
+	font-size: 0.8rem;
+	text-align: center;
+	color: #fff;
+	margin-bottom: 1rem;
+}
+
 .attribution a {
-	color: hsl(228, 45%, 44%);
+	color: var(--Soft-Magenta);
 }
