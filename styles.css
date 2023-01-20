@@ -32,7 +32,8 @@ body {
 }
 
 .logo {
-	width: 9rem;
+	width: 7.5rem;
+	margin-left: 0.5rem;
 }
 
 .hero-bg {
@@ -44,8 +45,8 @@ body {
 }
 
 .hero-img {
-	width: 20.5rem;
-	margin: 2.5rem auto;
+	width: 18.7rem;
+	margin: 2rem auto 2.5rem;
 }
 
 .hero-text {
@@ -55,15 +56,15 @@ body {
 
 .hero-text h1 {
 	font-family: var(--poppins);
-	font-size: 1.6rem;
+	font-size: 1.5rem;
 	padding: 0 3rem;
-	margin-bottom: 2rem;
+	margin: 3.5rem 0 2rem;
 }
 
 .hero-text p {
 	font-family: var(--open-sans);
-	padding: 0 2.5rem;
-	font-size: 1.1rem;
+	padding: 0 2.2rem;
+	font-size: 1rem;
 	line-height: 1.6;
 	margin-bottom: 2rem;
 }
@@ -75,6 +76,7 @@ body {
 	border-radius: 3rem;
 	color: var(--Violet);
 	font-family: var(--poppins);
+	cursor: pointer;
 }
 
 .socials {
@@ -94,11 +96,13 @@ body {
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	cursor: pointer;
 }
 
 .icons {
 	color: #fff;
 	font-size: 1.1rem;
+	cursor: pointer;
 }
 
 .attribution {
@@ -106,8 +110,168 @@ body {
 	text-align: center;
 	color: #fff;
 	margin-bottom: 1rem;
+	font-family: var(--open-sans);
 }
 
 .attribution a {
 	color: var(--Soft-Magenta);
+}
+
+@media screen and (min-width: 760px) {
+	.header {
+		padding: 3rem;
+	}
+
+	.logo {
+		width: 11.5rem;
+	}
+
+	.hero-img {
+		width: 30rem;
+		margin: 3rem auto 6.5rem;
+	}
+
+	.hero-text h1 {
+		font-size: 2.5rem;
+		padding: 0 4rem;
+	}
+
+	.hero-text p {
+		font-family: var(--open-sans);
+		padding: 0 6rem;
+		font-size: 1.6rem;
+		line-height: 1.6;
+		margin-bottom: 3rem;
+	}
+
+	.hero-text button {
+		padding: 1.2rem 7rem;
+		margin-bottom: 4rem;
+		font-size: 1.3rem;
+	}
+
+	.socials {
+		margin: 0 auto;
+		width: 12rem;
+
+		margin-bottom: 4rem;
+	}
+
+	.socials button {
+		width: 3rem;
+		height: 3rem;
+	}
+
+	.icons {
+		font-size: 1.5rem;
+		cursor: pointer;
+	}
+
+	.attribution {
+		font-size: 1.5rem;
+		text-align: center;
+		margin-bottom: 1rem;
+	}
+}
+
+@media screen and (min-width: 1440px) {
+	.mobile-hero {
+		display: none;
+	}
+
+	.desktop-hero {
+		display: block;
+	}
+
+	body {
+		background-color: var(--Violet);
+		position: relative;
+	}
+
+	.header {
+		padding: 3rem;
+	}
+
+	.logo {
+		width: 16.5rem;
+		margin-left: 1.5rem;
+	}
+
+	main {
+		margin: 2rem 4rem 0;
+	}
+
+	.hero {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	.hero-img {
+		width: 48rem;
+		margin: 0;
+		margin-left: 1rem;
+	}
+
+	.hero-text {
+		text-align: left;
+		padding: 0 0 0 2.5rem;
+	}
+
+	.hero-text h1 {
+		font-size: 2.3rem;
+		padding: 0;
+		margin: 3.5rem 0 2rem;
+	}
+
+	.hero-text p {
+		padding: 0;
+		font-size: 1.05rem;
+		line-height: 1.7;
+		margin-bottom: 2rem;
+	}
+
+	.hero-text button {
+		padding: 0.7rem 4rem;
+		margin-bottom: 0;
+		color: var(--Violet);
+	}
+
+	.hero-text button:hover,
+	.hero-text button:focus {
+		background-color: var(--Soft-Magenta);
+		color: #fff;
+	}
+
+	footer {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		padding: 0 4rem;
+	}
+
+	.socials {
+		margin: 0;
+		width: 100%;
+		display: flex;
+		justify-content: flex-end;
+		margin-bottom: 3rem;
+		gap: 1rem;
+	}
+
+	.socials button {
+		background-color: transparent;
+		width: 3rem;
+		height: 3rem;
+	}
+
+	.icons:hover,
+	.icons:focus {
+		color: var(--Soft-Magenta);
+		border-color: var(--Soft-Magenta);
+	}
+
+	.attribution {
+		font-size: 1rem;
+		margin-bottom: 0;
+	}
 }
